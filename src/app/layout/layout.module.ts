@@ -1,13 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { GoldenLayoutComponent } from './golden-layout/golden-layout.component';
+
+import { LayoutComponent } from './layout.component';
+import { GoldenLayoutModule } from './golden-layout/golden-layout.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    GoldenLayoutModule
   ],
   declarations: [
-    GoldenLayoutComponent
+    LayoutComponent
+  ],
+  exports: [
+    LayoutComponent
   ]
 })
 export class LayoutModule { }
